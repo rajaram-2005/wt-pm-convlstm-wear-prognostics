@@ -1,0 +1,34 @@
+{
+  "model": "model-4-convlstm",
+  "input_shape": [
+    10,
+    16,
+    16,
+    1
+  ],
+  "epochs_completed": 14,
+  "params": 960001,
+  "metrics": [
+    {
+      "split": "test",
+      "rmse_norm": 0.0424,
+      "rmse_cycles": 135.4,
+      "mae_cycles": 111.3,
+      "r2": 0.4594
+    },
+    {
+      "split": "val",
+      "rmse_norm": 0.0266,
+      "rmse_cycles": 84.9,
+      "mae_cycles": 69.6,
+      "r2": 0.6211
+    },
+    {
+      "split": "train",
+      "rmse_norm": 0.0226,
+      "rmse_cycles": 72.1,
+      "mae_cycles": 57.4,
+      "r2": 0.9855
+    }
+  ]
+}
