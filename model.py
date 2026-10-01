@@ -133,8 +133,6 @@ def build_model_4(input_shape=(WIN_LEN, SPATIAL, SPATIAL, 1)):
     out = Dense(1, activation="linear")(h)   # normalized RUL
     model = Model(inputs=x, outputs=out)
     model.compile(optimizer=tf.keras.optimizers.Adam(LEARNING_RATE), loss="mse", metrics=["mae"])
-    model = Model(inputs=x, outputs=out)
-    model.compile(optimizer=tf.keras.optimizers.Adam(LEARNING_RATE), loss="mse", metrics=["mae"])
     return model
 # Platform alias: the wt-pm adapter (m02-convlstm-wear) imports the factory by this name.
 build_convlstm = build_model_4
