@@ -138,10 +138,6 @@ def build_model_4(input_shape=(WIN_LEN, SPATIAL, SPATIAL, 1)):
     return model
 # Platform alias: the wt-pm adapter (m02-convlstm-wear) imports the factory by this name.
 build_convlstm = build_model_4
-
-    
-  
-
 # ----------------------------------------------------------------------------
 # Evaluation
 # ----------------------------------------------------------------------------
